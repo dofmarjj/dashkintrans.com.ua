@@ -1,17 +1,13 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Транспортная компания ТГК Негабарит</title>
+    <title>Контакты</title>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Негабаритные грузоперевозки по России и странам СНГ" />
-    <meta property="og:title" content="Транспортная компания ТГК Негабарит" />
-    <meta
-      property="og:description"
-      content="Негабаритные грузоперевозки по России и странам СНГ" />
+    <meta name="description" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
@@ -33,8 +29,8 @@
     <div class="container py-3 menu">
       <div
         class="row gx-12 align-items-center justify-content-center justify-content-lg-start">
-        <a href="../main/index.html" class="col-auto text-logo">
-          <img src="../assets/logos/logo_horizontal.svg" />
+        <a href="../index.html" class="col-auto text-logo">
+          <img src="../assets/logos/logo_horizontal.png" />
         </a>
         <div
           class="mt-3 mt-lg-0 col-12 col-lg d-flex align-items-center justify-content-center justify-content-lg-end justify-content-xl-start">
@@ -48,14 +44,14 @@
             <div class="col-auto menu__item mx-lg-3 selected">
               <a href="index.html">Контакты</a>
             </div>
-            <div class="col-auto menu__item mx-lg-3">
+            <!-- <div class="col-auto menu__item mx-lg-3">
               <a href="../vacancies/index.html">Вакансии</a>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="col-auto menu__phone d-none d-xl-block">
           <div class="d-flex gap-3">
-            <a class="link_tel" href="tel:+380674831681">+380 67 483-16-81</a>
+            <a class="link_tel" href="tel:+380674831681">+380 67 888-88-88</a>
             <div class="menu__socials">
               <a
                 href="mailto:OurCompany@gmail.com"
@@ -80,28 +76,61 @@
     </div>
 
     <main>
-      <div class="container">
+      <div class="container mt-5">
+        <div class="line-contact"></div>
+
+        <div class="call-us mb-5">
+          <h2 class="text-center mb-5 mt-80">
+            Оставьте вашу заявку и мы вскоре с Вами свяжемся
+          </h2>
+
+          <form id="request-form" class="form-container">
+            <label for="inputName">Ваше имя:</label>
+            <input
+              type="text"
+              id="inputName"
+              placeholder="Имя"
+              name="name"
+              required />
+
+            <label for="inputPhone">Ваш телефон:</label>
+            <input
+              type="text"
+              id="inputPhone"
+              placeholder="Номер телефона"
+              name="phone"
+              required />
+
+            <p class="error-text"></p>
+
+            <div class="text-center">
+              <button type="submit" id="send-btn-id">Отправить</button>
+            </div>
+          </form>
+        </div>
+
         <h3>КОНТАКТЫ</h3>
         <div class="row my-4 justify-content-between contact-block">
           <div class="col-auto address">
             <span>Наш адрес:</span>
-            г. Томск пер. Карповcкий 12
+            Наш адресс
           </div>
           <div class="col-auto phone">
-            <a class="link_tel" href="tel:+380674831681">+380 67 483-16-81</a>
+            <a class="link_tel" href="tel:+380674831681">+380 67 888-88-88</a>
           </div>
         </div>
-        <div class="map-container">
+
+        <!-- <div class="map-container">
           <iframe src="" width="100%" frameborder="0"></iframe>
-        </div>
+        </div> -->
       </div>
     </main>
     <footer>
       <div class="container py-3 menu">
         <div
           class="row gx-12 align-items-center justify-content-center justify-content-lg-start">
-          <a href="../main/index.html" class="col-auto text-logo">
-            <img src="../assets/logos/logo_horizontal.svg" />
+          <a href="../index.html" class="col-auto text-logo">
+            <img src="../assets/logos/logo_horizontal.png" />
           </a>
           <div
             class="mt-3 mt-lg-0 col-12 col-lg d-flex align-items-center justify-content-center justify-content-lg-end justify-content-xl-start">
@@ -115,13 +144,13 @@
               <div class="col-auto menu__item mx-lg-3">
                 <a href="index.html">Контакты</a>
               </div>
-              <div class="col-auto menu__item mx-lg-3">
-                <a href="../vacancies/index.html">Вакансии</a>
-              </div>
+              <!-- <div class="col-auto menu__item mx-lg-3">
+              <a href="../vacancies/index.html">Вакансии</a>
+            </div> -->
             </div>
           </div>
           <div class="col-auto menu__phone-small d-none d-xl-block">
-            +380 67 483 16 81
+            +0 67 888 88 88
           </div>
         </div>
       </div>
@@ -131,7 +160,7 @@
         <div class="row g-3 justify-content-between">
           <div class="col-auto address-block">
             <span>Наш офис:</span>
-            <span class="address">г. Томск пер. Карповcкий 12</span>
+            <span class="address">Наш адресс</span>
           </div>
           <div class="col-auto social-media">
             <a
@@ -161,11 +190,11 @@
           </div>
           <div class="w-100"></div>
           <div class="col-6">
-            2024 ООО Негабарит ТГК<br /><br />
-            ИНН 7017432682<br />
-            КПП 701701001<br />
-            ОГРН 1177031082865<br />
-            ОКПО 19663393
+            2024 ООО Название компании<br /><br />
+            ИНН номер инн<br />
+            КПП <br />
+            ОГРН <br />
+            ОКПО
           </div>
           <div class="col-6 align-content-end" style="text-align: end">
             <a href="#card" target="_blank" rel="noreferrer noopener"

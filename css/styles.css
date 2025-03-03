@@ -51,7 +51,15 @@ body::-webkit-scrollbar {
 .text-logo {
   font-weight: 900;
   font-size: 30px;
+  width: 25%;
 }
+
+@media (max-width: 768px) {
+  .text-logo {
+    width: 50%;
+  }
+}
+
 .text-logo img {
   width: 100%;
 }
@@ -920,3 +928,121 @@ main h3 {
 .photo-allWidth .main-third-section__content a:hover::after {
   left: 0;
 }
+
+/* styles */
+
+h2 {
+  font-size: 42px;
+}
+
+.mt-80 {
+  margin-top: 5rem;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.line-contact {
+  content: "";
+  position: absolute;
+  height: 180%;
+  width: 240px;
+  background-color: #0f006c;
+  z-index: -40;
+  top: 50%;
+  right: 90%;
+  transform: rotate(26deg) translateY(-53%);
+}
+
+/* / styles */
+
+/* advantages */
+
+.advantages {
+  /* background-color: #1e1e1e; */
+  padding: 100px 20px;
+}
+
+.advantages__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.advantages__item {
+  background: #0000009c;
+  border: #ffffff87 solid;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.advantages__item:hover {
+  background: #0f006ca8;
+  transition: 0.3s;
+}
+
+.advantages__title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.advantages__description {
+  font-size: 18px;
+}
+
+/* / advantages */
+
+/* contact */
+
+.form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.form-container label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 30px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  background-color: transparent;
+  color: white;
+}
+
+.error-text {
+  color: red;
+  font-size: 14px;
+  display: none;
+}
+
+button {
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #ccc;
+}
+
+/* / contact */
