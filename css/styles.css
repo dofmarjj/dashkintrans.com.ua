@@ -251,9 +251,9 @@ body::-webkit-scrollbar {
     z-index: -50;
     animation: fadeIn 3s;
 
-    background-image: url("../assets/images/wagon-main.jpg");
+    background-image: url("../assets/images/wagon-main.PNG");
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
   }
 
   .video-block__video {
